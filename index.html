@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f8ff;
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .invite-container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: white;
+                border-radius: 20px;
+                padding: 40px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                border: 5px solid #4a90e2;
+            }
+            
+            h1 {
+                color: #4a90e2;
+                font-size: 3em;
+                margin-bottom: 10px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            
+            h2 {
+                color: #ff6b6b;
+                font-size: 2em;
+                margin-top: 0;
+            }
+            
+            .event-title {
+                background: linear-gradient(45deg, #4a90e2, #ff6b6b);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 2.5em;
+                margin: 20px 0;
+            }
+            
+            .details {
+                background-color: #f8f9fa;
+                padding: 25px;
+                border-radius: 15px;
+                margin: 30px 0;
+                text-align: left;
+                border-left: 5px solid #4a90e2;
+            }
+            
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            li {
+                padding: 10px;
+                margin: 8px 0;
+                background-color: #e6f7ff;
+                border-radius: 8px;
+                transition: transform 0.3s;
+            }
+            
+            li:hover {
+                transform: translateX(10px);
+                background-color: #b3e0ff;
+            }
+            
+            .guest-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+                margin: 30px 0;
+            }
+            
+            .guest {
+                background-color: #4a90e2;
+                color: white;
+                padding: 15px;
+                border-radius: 10px;
+                transition: all 0.3s;
+            }
+            
+            .guest:hover {
+                background-color: #ff6b6b;
+                transform: scale(1.05);
+            }
+            
+            .rsvp-button {
+                background-color: #ff6b6b;
+                color: white;
+                border: none;
+                padding: 18px 40px;
+                font-size: 1.2em;
+                border-radius: 50px;
+                cursor: pointer;
+                margin-top: 30px;
+                transition: all 0.3s;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+            
+            .rsvp-button:hover {
+                background-color: #4a90e2;
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+            }
+            
+            .date-time {
+                font-size: 1.5em;
+                color: #4a90e2;
+                font-weight: bold;
+                margin: 20px 0;
+                padding: 15px;
+                background-color: #e6f7ff;
+                border-radius: 10px;
+                display: inline-block;
+            }
+            
+            .location {
+                color: #666;
+                font-size: 1.2em;
+                margin: 20px 0;
+                padding: 10px;
+                border-bottom: 2px dashed #4a90e2;
+                display: inline-block;
+            }
+            
+            .dress-code {
+                font-style: italic;
+                color: #888;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                display: inline-block;
+            }
+            
+            .note {
+                margin-top: 30px;
+                padding: 15px;
+                background-color: #fffacd;
+                border-radius: 10px;
+                border: 2px solid #ffd700;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="invite-container">
+            <h1>You're Invited!</h1>
+            <div class="event-title">🚀 Project Launch Party</div>
+            
+            <div class="date-time">
+                📅 Saturday, December 15, 2024<br>
+                ⏰ 7:00 PM - 11:00 PM
+            </div>
+            
+            <div class="location">
+                📍 The Innovation Hub<br>
+                123 Tech Street, Silicon Valley
+            </div>
+            
+            <div class="details">
+                <h2>Event Details:</h2>
+                <ul>
+                    <li>🎉 Celebrate the launch of our new AI platform</li>
+                    <li>🎤 Live music by "Digital Dreamers" band</li>
+                    <li>🍸 Premium cocktails and gourmet food stations</li>
+                    <li>🤖 AI demo zone with interactive experiences</li>
+                    <li>📸 Photo booth with augmented reality filters</li>
+                    <li>🎁 Surprise gifts for all attendees</li>
+                    <li>🌟 Special guest speakers from tech industry</li>
+                </ul>
+            </div>
+            
+            <div class="dress-code">
+                👔 Dress Code: Smart Casual / Tech Chic
+            </div>
+            
+            <h2>Confirmed Guests:</h2>
+            <div class="guest-list">
+                <div class="guest">Alex Chen</div>
+                <div class="guest">Maria Garcia</div>
+                <div class="guest">David Kim</div>
+                <div class="guest">Sarah Johnson</div>
+                <div class="guest">James Wilson</div>
+                <div class="guest">Lisa Wang</div>
+                <div class="guest">Michael Brown</div>
+                <div class="guest">Emily Davis</div>
+            </div>
+            
+            <button class="rsvp-button">
+                ✨ CONFIRM YOUR ATTENDANCE ✨
+            </button>
+            
+            <div class="note">
+                💫 Please RSVP by December 10th. <br>
+                +1s are welcome! Let us know about dietary restrictions.
+            </div>
+        </div>
+        
+    </body>
+</html>
